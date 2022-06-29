@@ -7,7 +7,7 @@
     gap: 20px;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-color: #f8f9fd;
+    background-color: white;
   }
   
   input[type="text"],
@@ -20,8 +20,8 @@
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
+    background: green;
+    border: 1px solid green;
     color: #fff;
     padding: 10px 20px;
   }
