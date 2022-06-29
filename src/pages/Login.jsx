@@ -1,82 +1,74 @@
-import React, { useState } from "react";
-import "./Login.css";
+import { useState } from 'react';
+import './Login.css';
 
 function Login() {
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+const [isLoggedin, setIsLoggedin] = useState(false);
 
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+const login = (e) => {
+	e.preventDefault();
+	console.log(name, email, password);
+	const userData = {
+	name,
+	email,
+	password,
+	};
+	localStorage.setItem('token-info', JSON.stringify(userData));
+	setIsLoggedin(true);
+	setName('');
+	setEmail('');
+	setPassword('');
+};
 
-  const database = [
-    {
-      username: "user1",
-      password: "pass1"
-    },
-    {
-      username: "user2",
-      password: "pass2"
-    }
-  ];
+const logout = () => {
+	localStorage.removeItem('token-info');
+	setIsLoggedin(false);
+};
 
-  const errors = {
-    uname: "invalid username",
-    pass: "invalid password"
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    var { uname, pass } = document.forms[0];
-
-    const userData = database.find((user) => user.username === uname.value);
-
-    if (userData) {
-      if (userData.password !== pass.value) {
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
-      }
-    } else {
-      setErrorMessages({ name: "uname", message: errors.uname });
-    }
-  };
-
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
-
-    const renderForm = (
-    <div className="form">
-      <form onSubmit={handleSubmit}>
-
-        <div className="input-container">
-          <label>Username </label>
-          <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
-        </div>
-
-        <div className="input-container">
-          <label>Password </label>
-          <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
-        </div>
-
-        <div className="button-container">
-          <input type="submit" />
-        </div>
-
-      </form>
-    </div>
-  );
-
-  return (
-    <div className="app">
-      <div className="login-form">
-        <div className="title">Sign In</div>
-        {isSubmitted ? <div>Successfully logged in</div> : renderForm}
+return (
+	<>
+	<div style={{ textAlign: 'center' }}>
+		{!isLoggedin ? (
+		<>
+			<form action="">
+			<input
+				type="text"
+				onChange={(e) => setName(e.target.value)}
+				value={name}
+				placeholder="Name"
+			/>
+			<input
+				type="email"
+				onChange={(e) => setEmail(e.target.value)}
+				value={email}
+				placeholder="Email"
+			/>
+			<input
+				type="password"
+				onChange={(e) => setPassword(e.target.value)}
+				value={password}
+				placeholder="Password"
+			/>
+              <div className="button-container">
+			<button type="submit" onClick={login}>
+				GO
+			</button>
       </div>
-    </div>
-  );
+			</form>
+		</>
+		) : (
+		<>
+    <div className="login">
+			<h1>Welcome</h1>
+			<button onClickCapture={logout}>logout user</button>
+      </div>
+  	</>
+		)}
+	</div>
+	</>
+);
 }
 
 export default Login;
