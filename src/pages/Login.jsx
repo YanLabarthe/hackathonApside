@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Login.css';
 
 function Login() {
+
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
@@ -10,11 +11,13 @@ const [isLoggedin, setIsLoggedin] = useState(false);
 const login = (e) => {
 	e.preventDefault();
 	console.log(name, email, password);
+
 	const userData = {
 	name,
 	email,
 	password,
 	};
+
 	localStorage.setItem('token-info', JSON.stringify(userData));
 	setIsLoggedin(true);
 	setName('');
@@ -33,36 +36,53 @@ return (
 		{!isLoggedin ? (
 		<>
 			<form action="">
+
+      <div className="input-container">
 			<input
 				type="text"
 				onChange={(e) => setName(e.target.value)}
 				value={name}
 				placeholder="Name"
 			/>
+      </div>
+
+      <div className="input-container">
 			<input
 				type="email"
 				onChange={(e) => setEmail(e.target.value)}
 				value={email}
 				placeholder="Email"
 			/>
+      </div>
+
+      <div className="input-container">
 			<input
 				type="password"
 				onChange={(e) => setPassword(e.target.value)}
 				value={password}
 				placeholder="Password"
 			/>
-              <div className="button-container">
+      </div>
+
+      <div className="button-container">
 			<button type="submit" onClick={login}>
 				GO
 			</button>
       </div>
+      
 			</form>
 		</>
 		) : (
 		<>
     <div className="login">
+    <div className="login-form">
 			<h1>Welcome</h1>
-			<button onClickCapture={logout}>logout user</button>
+      <div className="button-container">
+			<button onClickCapture={logout}>
+        Logout
+        </button>
+        </div>
+      </div>
       </div>
   	</>
 		)}
