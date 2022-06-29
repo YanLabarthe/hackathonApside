@@ -69,14 +69,13 @@ return (
 				GO
 			</button>
       </div>
-      
+
 			</form>
 		</>
 		) : (
 		<>
     <div className="login">
     <div className="login-form">
-			<h1>Welcome</h1>
       <div className="button-container">
 			<button onClickCapture={logout}>
         Logout
