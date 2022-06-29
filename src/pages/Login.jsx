@@ -10,10 +10,12 @@ const [isLoggedin, setIsLoggedin] = useState(false);
 
 const login = (e) => {
 	e.preventDefault();
-	console.log(name, email, password);
+	console.log(email, password);
+
+
+
 
 	const userData = {
-	name,
 	email,
 	password,
 	};
@@ -36,13 +38,14 @@ return (
 		{!isLoggedin ? (
 		<>
 			<form action="" className="login">
-
       <div className="input-container">
+
 			<input
 				type="email"
 				onChange={(e) => setEmail(e.target.value)}
 				value={email}
-				placeholder="Email"
+				placeholder="Email" name="unmail"
+        required
 			/>
       </div>
 
@@ -52,12 +55,15 @@ return (
 				onChange={(e) => setPassword(e.target.value)}
 				value={password}
 				placeholder="Password"
+        name="pass"
+        required
 			/>
+
       </div>
 
       <div className="button-container">
 			<button type="submit" onClick={login}>
-				GO
+				Login
 			</button>
       </div>
 
