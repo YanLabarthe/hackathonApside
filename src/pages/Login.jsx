@@ -39,15 +39,6 @@ return (
 
       <div className="input-container">
 			<input
-				type="text"
-				onChange={(e) => setName(e.target.value)}
-				value={name}
-				placeholder="Name"
-			/>
-      </div>
-
-      <div className="input-container">
-			<input
 				type="email"
 				onChange={(e) => setEmail(e.target.value)}
 				value={email}
