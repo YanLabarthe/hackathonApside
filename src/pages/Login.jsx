@@ -35,7 +35,7 @@ return (
 	<div style={{ textAlign: 'center' }}>
 		{!isLoggedin ? (
 		<>
-			<form action="">
+			<form action="" className="login">
 
       <div className="input-container">
 			<input
