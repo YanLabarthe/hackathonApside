@@ -21,17 +21,28 @@
     border: 1px solid blue;
   }
     
-  button {
-    background-color:green;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+  .buttonin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
     cursor: pointer;
+    font-size: 15px;
+    background-color: green;
+    border: 1px solid green;
+    color: black;
+    padding: 10px 20px;
+  }
+
+  .buttonout {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: red;
+    border: 1px solid red;
+    color: black;
+    padding: 10px 20px;
   }
 
   .error {

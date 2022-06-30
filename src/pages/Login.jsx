@@ -29,6 +29,7 @@ const logout = () => {
 
 return (
 	<>
+
 	<div style={{ textAlign: 'center' }}>
 	{!isLoggedin ? (
 
@@ -59,11 +60,11 @@ return (
 	/>
 	</div>
 
-	<div>
+	<div classname="buttonin">
 	<button 
-	class="button" 
+	class="buttonin" 
 	type="submit" 
-	onClick={login}>
+	onClickCapture={login}>
 	Login
 	</button>
 	</div>
@@ -75,12 +76,16 @@ return (
 
     <div className="log">
     <div className="log-form">
-	
+	<div classname="buttonout">
+		
 	<button 
+	class="buttonout" 
+	type="submit" 
 	onClickCapture={logout}>
 	Logout
 	</button>
 
+	</div>
 	</div>
 	</div>
 	  
