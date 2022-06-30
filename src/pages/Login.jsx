@@ -3,7 +3,6 @@ import './Login.css';
 
 function Login() {
 
-const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 const [isLoggedin, setIsLoggedin] = useState(false);
@@ -11,9 +10,6 @@ const [isLoggedin, setIsLoggedin] = useState(false);
 const login = (e) => {
 	e.preventDefault();
 	console.log(email, password);
-
-
-
 
 	const userData = {
 	email,
