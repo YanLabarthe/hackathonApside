@@ -6,7 +6,6 @@ function Login() {
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 const [isLoggedin, setIsLoggedin] = useState(false);
-
 const [errorMessages, setErrorMessages] = useState({});
 const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -21,30 +20,25 @@ const database = [
 	}
   ];
   
-  const errors = {
+const errors = {
 	uname: "invalid username",
 	pass: "invalid password"
   };
 
-  const handleSubmit = (event) => {
-	//Prevent page reload
+const handleSubmit = (event) => {
 	event.preventDefault();
   
-	var { uname, pass } = document.forms[0];
+var { uname, pass } = document.forms[0];
   
-	// Find user login info
-	const userData = database.find((user) => user.username === uname.value);
+const userData = database.find((user) => user.username === uname.value);
   
-	// Compare user info
 	if (userData) {
 	  if (userData.password !== pass.value) {
-		// Invalid password
 		setErrorMessages({ name: "pass", message: errors.pass });
 	  } else {
 		setIsSubmitted(true);
 	  }
 	} else {
-	  // Username not found
 	  setErrorMessages({ name: "uname", message: errors.uname });
 	}
   };
@@ -77,13 +71,18 @@ const logout = () => {
 return (
 	<>
 
-	<div style={{ textAlign: 'center' }}>
+	<div 
+	style={{ textAlign: 'center' }}
+	className="log"
+	
+	
+	>
 	{!isLoggedin ? (
 
 		<>
 	<form 
 	action="" 
-	className="log"
+	className="log-form"
 	onSubmit={handleSubmit}>
 
 	<div className="input-container">
@@ -91,7 +90,7 @@ return (
 	type="email"
 	onChange={(e) => setEmail(e.target.value)}
 	value={email}
-	placeholder="Email" 
+	placeholder="Email*" 
 	name="uemail"
 	required
 	/>
@@ -103,16 +102,16 @@ return (
 	type="password"
 	onChange={(e) => setPassword(e.target.value)}
 	value={password}
-	placeholder="Password"
+	placeholder="Password*"
 	name="pass"
 	required
 	/>
 	{renderErrorMessage("pass")}
 	</div>
+	<p>*Camp obbligatoire</p>
 
-	<div >
+	<div class="buttonin" >
 	<button 
-	class="buttonin" 
 	type="submit" 
 	onClickCapture={login}>
 	Login
@@ -120,19 +119,16 @@ return (
 	</div>
 
 	</form>
+
 	</>
 	) : (
 	<>
 
     <div className="log">
     <div className="log-form">
-
-
-
-
-	<div>
+		
+	<div class="buttonout">
 	<button 
-	class="buttonout" 
 	type="submit" 
 	onClickCapture={logout}>
 	Logout
@@ -150,4 +146,3 @@ return (
 }
 
 export default Login;
-
