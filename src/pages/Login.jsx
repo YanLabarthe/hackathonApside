@@ -7,8 +7,16 @@ const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 const [isLoggedin, setIsLoggedin] = useState(false);
 
-const login = (e) => {
-	e.preventDefault();
+const [errorMessages, setErrorMessages] = useState({});
+const [isSubmitted, setIsSubmitted] = useState(false);
+
+const renderErrorMessage = (name) =>
+  name === errorMessages.name && (
+    <div className="error">{errorMessages.message}</div>
+  );
+
+const login = (event) => {
+	event.preventDefault();
 	console.log(email, password);
 
 const userData = {
@@ -21,6 +29,45 @@ const userData = {
 	setEmail('');
 	setPassword('');
 };
+
+const handleSubmit = (event) => {
+	//Prevent page reload
+	event.preventDefault();
+  
+	var { uname, pass } = document.forms[0];
+  
+	// Find user login info
+	const userData = database.find((user) => user.username === uname.value);
+  
+	// Compare user info
+	if (userData) {
+	  if (userData.password !== pass.value) {
+		// Invalid password
+		setErrorMessages({ name: "pass", message: errors.pass });
+	  } else {
+		setIsSubmitted(true);
+	  }
+	} else {
+	  // Username not found
+	  setErrorMessages({ name: "uname", message: errors.uname });
+	}
+  };
+
+  const database = [
+	{
+	  username: "user1",
+	  password: "pass1"
+	},
+	{
+	  username: "user2",
+	  password: "pass2"
+	}
+  ];
+  
+  const errors = {
+	uname: "invalid username",
+	pass: "invalid password"
+  };
 
 const logout = () => {
 	localStorage.removeItem('token-info');
@@ -36,7 +83,8 @@ return (
 		<>
 	<form 
 	action="" 
-	className="log">
+	className="log"
+	onSubmit={handleSubmit}>
 
 	<div className="input-container">
 	<input
@@ -44,9 +92,10 @@ return (
 	onChange={(e) => setEmail(e.target.value)}
 	value={email}
 	placeholder="Email" 
-	name="unmail"
+	name="uemail"
 	required
 	/>
+	{renderErrorMessage("uname")}
 	</div>
 
 	<div className="input-container">
@@ -58,9 +107,10 @@ return (
 	name="pass"
 	required
 	/>
+	{renderErrorMessage("pass")}
 	</div>
 
-	<div classname="buttonin">
+	<div >
 	<button 
 	class="buttonin" 
 	type="submit" 
@@ -76,16 +126,16 @@ return (
 
     <div className="log">
     <div className="log-form">
-	<div classname="buttonout">
-		
+
+	<div>
 	<button 
 	class="buttonout" 
 	type="submit" 
 	onClickCapture={logout}>
 	Logout
 	</button>
-
 	</div>
+
 	</div>
 	</div>
 	  
