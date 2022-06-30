@@ -35,7 +35,7 @@ return (
 		<>
 	<form 
 	action="" 
-	className="login">
+	className="log">
 
 	<div className="input-container">
 	<input
@@ -73,8 +73,8 @@ return (
 	) : (
 	<>
 
-    <div className="logout">
-    <div className="logout-form">
+    <div className="log">
+    <div className="log-form">
 	
 	<button 
 	onClickCapture={logout}>
