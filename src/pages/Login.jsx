@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Login.css';
+import './Log.css';
 
 function Login() {
 
@@ -74,9 +74,8 @@ return (
 	<div 
 	style={{ textAlign: 'center' }}
 	className="log"
-	
-	
 	>
+		
 	{!isLoggedin ? (
 
 		<>
