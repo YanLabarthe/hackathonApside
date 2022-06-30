@@ -91,53 +91,70 @@ class Signup extends React.Component {
      
   render() {
     return (
-      <div>
+      <div className="log">
         
-        <form onSubmit={this.handleSubmit}>
+  <form 
+  className="log-form"
+  onSubmit={this.handleSubmit}>
   
-          <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input 
-              type="text" 
-              name="email" 
-              value={this.state.input.email}
-              onChange={this.handleChange}
-              class="form-control" 
-              placeholder="Enter email" 
-              id="email" />
+  <div 
+  class="form-group">
+      
+  <input 
+  type="text" 
+  name="email" 
+  value={this.state.input.email}
+  onChange={this.handleChange}
+  class="form-control" 
+  placeholder="Email*" 
+  id="email" />
   
-              <div className="text-danger">{this.state.errors.email}</div>
-          </div>
+  <div 
+  className="text-danger">
+  {this.state.errors.email}</div>
+  </div>
   
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input 
-              type="password" 
-              name="password" 
-              value={this.state.input.password}
-              onChange={this.handleChange}
-              class="form-control" 
-              placeholder="Enter password" 
-              id="password" />
+  <div class="form-group">
+  <input 
+  type="password" 
+  name="password" 
+  value={this.state.input.password}
+  onChange={this.handleChange}
+  class="form-control" 
+  placeholder="Password*" 
+  id="password" />
   
-              <div className="text-danger">{this.state.errors.password}</div>
-          </div>
+  <div 
+  className="text-danger">
+  {this.state.errors.password}</div>
+  </div>
   
-          <div class="form-group">
-            <label for="password">Confirm Password:</label>
+<div class="form-group">
             <input 
               type="password" 
               name="confirm_password" 
               value={this.state.input.confirm_password}
               onChange={this.handleChange}
               class="form-control" 
-              placeholder="Enter confirm password" 
+              placeholder="Confirm password*" 
               id="confirm_password" />
+
+<p>*Camp obbligatoire</p>
+
   
-              <div className="text-danger">{this.state.errors.confirm_password}</div>
+              <div 
+              className="text-danger">
+                {this.state.errors.confirm_password}
+                </div>
           </div>
              
-          <input type="submit" value="Submit" class="btn btn-success" />
+          <div class="buttonin" >
+          <input 
+          type="submit" 
+          value="Login" 
+          class="btn btn-success" />
+          </div>
+
         </form>
       </div>
     );
