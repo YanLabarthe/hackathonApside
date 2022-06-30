@@ -59,28 +59,28 @@ return (
 	/>
 	</div>
 
+	<div>
 	<button 
 	class="button" 
 	type="submit" 
 	onClick={login}>
 	Login
 	</button>
+	</div>
 
 	</form>
 	</>
 	) : (
 	<>
 
-    <div className="login">
-    <div className="login-form">
-	<div className="button-container">
-
+    <div className="logout">
+    <div className="logout-form">
+	
 	<button 
 	onClickCapture={logout}>
 	Logout
 	</button>
 
-	</div>
 	</div>
 	</div>
 	  
