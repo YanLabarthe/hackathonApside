@@ -2,7 +2,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
+import { BiMessageRoundedDots } from "react-icons/bi";
 import { DiReact } from "react-icons/di";
 
 import { Link } from "react-router-dom";
@@ -21,20 +21,29 @@ const WeekTimeline = () => {
       </Link>
 
       <VerticalTimeline>
-        
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="Monday 27 Jun 2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h4 className="vertical-timeline-element-subtitle">
-            Adding some content for the main page 
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
+            Adding some content for the main page
           </h4>
+          <br />
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
+          <BiMessageRoundedDots size={38} />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             React
           </button>
@@ -45,13 +54,27 @@ const WeekTimeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title">
-        Working on the contact form, add some restriction on the input request.   </h3>
-         
+                    <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
+
+            Working on the contact form, add some restriction on the input
+            request.{" "}
+          </h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
+          <BiMessageRoundedDots size={38} />
+
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             React
           </button>
@@ -62,14 +85,23 @@ const WeekTimeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title">Set the navBar</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-          Working on the contact form, add some restriction on the input request.
-          </h4>
+                   <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
+Set the navBar</h4>
+<br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
+          <BiMessageRoundedDots size={38} />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             React
           </button>
@@ -80,13 +112,25 @@ const WeekTimeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-           <h4 className="vertical-timeline-element-subtitle">
-          Working on the contact form, add some restriction on the input request.
+                    <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
+
+            Working on the contact form, add some restriction on the input
+            request.
           </h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
+          <BiMessageRoundedDots size={38} />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             React
           </button>
@@ -97,7 +141,13 @@ const WeekTimeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-         <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38} />
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -105,8 +155,14 @@ const WeekTimeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-        
-        <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          {" "}
+          <BiMessageRoundedDots size={38} />
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -114,9 +170,14 @@ const WeekTimeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-         
-         <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-
+          {" "}
+          <BiMessageRoundedDots size={38} />
+          <button
+            type="button"
+            className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 "
+          >
+            +
+          </button>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

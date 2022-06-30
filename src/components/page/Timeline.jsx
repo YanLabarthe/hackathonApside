@@ -5,6 +5,7 @@ import {
 
 import { DiReact } from "react-icons/di";
 import { GrVmMaintenance } from "react-icons/gr";
+import { BiMessageRoundedDots } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -30,12 +31,17 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<GrVmMaintenance />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title">Maintenance</h3>
-
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">Maintenance</h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+          
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -44,14 +50,19 @@ const Timeline = () => {
           icon={<DiReact />}
           
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             creation of the discussion feed
           </h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
 
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             Nodejs
           </button>
@@ -62,26 +73,34 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h4 className="vertical-timeline-element-subtitle">- Week off -</h4>
+         <h4 className="vertical-timeline-element-subtitle font-bold text-xl">- Week off -</h4>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="6th Jun 2022 - 12 Jun 2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DiReact />}
-        >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h4 className="vertical-timeline-element-subtitle">
+        ><h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Setup of the Back office
           </h4>
-          <p>Creation of the Database</p>{" "}
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h4 className="vertical-timeline-element-subtitle font-bold text-xl">Creation of the Database</h4>       <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             Nodejs
           </button>
@@ -95,16 +114,26 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title">
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Creation of the Footer
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          </h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <br />
+         <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Creation of the contact form
           </h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             React
           </button>
@@ -115,14 +144,24 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title">Set the navBar</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">Set the navBar</h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <br />
+         <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             create the main page
           </h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
           <button className="bg-red-500 hover:bg-red-800 text-white font-bold py-1 px-2 border border-red-800 rounded">
             React
           </button>
@@ -133,27 +172,37 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title font-bold">UX</h3>
+       
 
-          <p>Discuss around Visual Design and style of the app</p>
+       <h4 className="vertical-timeline-element-subtitle font-bold text-xl">Discuss around Visual Design and style of the app</h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
           icon={<DiReact />}
         >
-            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
-          <h3 className="vertical-timeline-element-title font-bold">
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Project launch
-          </h3>
+          </h4>
 
-          <p>Review terms and sign contract with client</p>
+          <h4 className="vertical-timeline-element-subtitle font-bold text-xl">Review terms and sign contract with client</h4>
+          <br />
+          <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+         <h3>-Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-700 rounded">
             detail
           </button>
+            <button type="button" className="focus:outline-none text-white text-2xl bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">+</button>
+          <BiMessageRoundedDots size={38}  />
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
