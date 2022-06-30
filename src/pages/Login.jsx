@@ -10,27 +10,23 @@ const [isLoggedin, setIsLoggedin] = useState(false);
 const [errorMessages, setErrorMessages] = useState({});
 const [isSubmitted, setIsSubmitted] = useState(false);
 
-const renderErrorMessage = (name) =>
-  name === errorMessages.name && (
-    <div className="error">{errorMessages.message}</div>
-  );
+const database = [
+	{
+	  username: "user1",
+	  password: "pass1"
+	},
+	{
+	  username: "user2",
+	  password: "pass2"
+	}
+  ];
+  
+  const errors = {
+	uname: "invalid username",
+	pass: "invalid password"
+  };
 
-const login = (event) => {
-	event.preventDefault();
-	console.log(email, password);
-
-const userData = {
-	email,
-	password,
-	};
-
-	localStorage.setItem('token-info', JSON.stringify(userData));
-	setIsLoggedin(true);
-	setEmail('');
-	setPassword('');
-};
-
-const handleSubmit = (event) => {
+  const handleSubmit = (event) => {
 	//Prevent page reload
 	event.preventDefault();
   
@@ -53,21 +49,25 @@ const handleSubmit = (event) => {
 	}
   };
 
-  const database = [
-	{
-	  username: "user1",
-	  password: "pass1"
-	},
-	{
-	  username: "user2",
-	  password: "pass2"
-	}
-  ];
-  
-  const errors = {
-	uname: "invalid username",
-	pass: "invalid password"
-  };
+const renderErrorMessage = (name) =>
+  name === errorMessages.name && (
+    <div className="error">{errorMessages.message}</div>
+  );
+
+const login = (event) => {
+	event.preventDefault();
+	console.log(email, password);
+
+const userData = {
+	email,
+	password,
+	};
+
+	localStorage.setItem('token-info', JSON.stringify(userData));
+	setIsLoggedin(true);
+	setEmail('');
+	setPassword('');
+};
 
 const logout = () => {
 	localStorage.removeItem('token-info');
@@ -127,6 +127,9 @@ return (
     <div className="log">
     <div className="log-form">
 
+
+
+
 	<div>
 	<button 
 	class="buttonout" 
@@ -147,3 +150,4 @@ return (
 }
 
 export default Login;
+
