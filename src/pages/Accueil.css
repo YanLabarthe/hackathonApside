@@ -100,7 +100,7 @@
 @media (max-width:750px) {
   .portrait {
     display: grid;
-    grid-template-col2umns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
     margin-left:50px;
     
   }
