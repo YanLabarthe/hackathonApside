@@ -1,6 +1,6 @@
 import React from 'react';
-import './pages/Accueil.css';
-import Navbar from './components/Navbar';
+import './Accueil.css';
+import Navbar from '../components/Navbar';
 
 function Accueil() {
 
