@@ -28,10 +28,10 @@
     margin: 10px;
   }
 
-  error {
-    color: red;
+  .text-danger {
+  color: red;
   }
-    
+   
   .buttonin {
     display: flex;
     justify-content: center;

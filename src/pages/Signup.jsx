@@ -99,8 +99,7 @@ class Signup extends React.Component {
   className="log-form"
   onSubmit={this.handleSubmit}>
   
-  <div class="form-group">
-      
+  <div class="form-group"> 
   <input 
   type="text" 
   name="email" 
@@ -129,33 +128,32 @@ class Signup extends React.Component {
   </div>
   
 <div class="form-group">
-            <input 
-              type="password" 
-              name="confirm_password" 
-              value={this.state.input.confirm_password}
-              onChange={this.handleChange}
-              class="form-control" 
-              placeholder="Confirm password*" 
-              id="confirm_password" />
+  <input 
+  type="password" 
+  name="confirm_password" 
+  value={this.state.input.confirm_password}
+  onChange={this.handleChange}
+  class="form-control" 
+  placeholder="Confirm password*" 
+  id="confirm_password" />
 
 <p>*Camp obbligatoire</p>
 
-  
-              <div 
-              className="text-danger">
-                {this.state.errors.confirm_password}
-                </div>
-          </div>
+  <div 
+  className="text-danger">
+  {this.state.errors.confirm_password}
+  </div>
+  </div>
              
-          <div class="buttonin" >
-          <input 
-          type="submit" 
-          value="Login" 
-          class="btn btn-success" />
-          </div>
+  <div class="buttonin" >
+  <input 
+  type="submit" 
+  value="Login" 
+  class="btn btn-success" />
+  </div>
 
-        </form>
-      </div>
+  </form>
+  </div>
     );
   }
 }
