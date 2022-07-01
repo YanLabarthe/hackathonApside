@@ -1,15 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import Home from './pages/Home';
-import Login from "./pages/Login";
-import Signup from './pages/Signup';
+import Accueil from "./pages/Accueil";
+import Timeline from "./components/page/Timeline";
+import WeekTimeline from "./components/page/WeeklyTimeline"
+import ProjectFeed from "./pages/ProjectFeed";
 
 function App() {
   return (
     
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/" element={<Accueil/>}/>
+        <Route path="/timeline" element={<Timeline />} />
+        <Route path="/weekTime" element={<WeekTimeline />} />
+        <Route path="/project-feed" element={<ProjectFeed />} />
       </Routes>
     
   );
