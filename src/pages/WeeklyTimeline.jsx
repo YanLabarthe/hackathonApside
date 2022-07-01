@@ -14,11 +14,12 @@ const WeekTimeline = () => {
       <Link to="/timeline">
         <button
           type="button"
-          className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block flex m-auto px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
         >
           return to the main Timeline
         </button>
       </Link>
+      
 
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -26,6 +27,8 @@ const WeekTimeline = () => {
           date="Monday 27 Jun 2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
           <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Adding some content for the main page
@@ -53,6 +56,8 @@ const WeekTimeline = () => {
           date="Thuesday 28 Jun 2022"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
                     <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
 
@@ -84,6 +89,8 @@ const WeekTimeline = () => {
           date="Wednesday 29 Jun 2022"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
                    <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
 Set the navBar</h4>
@@ -111,6 +118,8 @@ Set the navBar</h4>
           date="Thursday 30 Jun 2022"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
                     <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
 
@@ -140,6 +149,8 @@ Set the navBar</h4>
           date="Friday 1st of July 2022"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
           <BiMessageRoundedDots size={38} />
           <button
@@ -154,6 +165,8 @@ Set the navBar</h4>
           date="Saturday 2nd of July 2022"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
           {" "}
           <BiMessageRoundedDots size={38} />
@@ -169,6 +182,8 @@ Set the navBar</h4>
           date="Sunday 3rd of July 2022"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
           {" "}
           <BiMessageRoundedDots size={38} />

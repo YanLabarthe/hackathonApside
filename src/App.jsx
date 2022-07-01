@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Accueil />} />
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/weekTime" element={<WeekTimeline />} />
         <Route path="/project-feed" element={<ProjectFeed />} />
