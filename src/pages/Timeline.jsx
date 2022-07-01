@@ -16,7 +16,7 @@ const Timeline = () => {
       <Link to="/weekTime">
         <button
           type="button"
-          className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block flex m-auto px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
         >
           Go to the current Sprint
         </button>
@@ -46,6 +46,8 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="20 Jun 2022 - 26 Jun 2022"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DiReact />}
           
@@ -69,6 +71,8 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="13 Jun 2022 - 19 Jun 2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DiReact />}
@@ -84,6 +88,8 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           date="6th Jun 2022 - 12 Jun 2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           icon={<DiReact />}
         ><h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Setup of the Back office
@@ -111,6 +117,8 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="30 may 2022 - 5th of jun 2022"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
@@ -141,6 +149,8 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="23 May 2022 - 29 May 2022"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
@@ -169,6 +179,8 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="16 May 2022 - 22 May 2022"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<DiReact />}
         >
@@ -188,6 +200,8 @@ const Timeline = () => {
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
           icon={<DiReact />}
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         >
           <h4 className="vertical-timeline-element-subtitle font-bold text-xl">
             Project launch
