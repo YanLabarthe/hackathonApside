@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+
 const ProjectFeed = () => {
   const [userMessage, setUserMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
@@ -44,9 +45,13 @@ const ProjectFeed = () => {
             </div>
             <div className="flex flex-col leading-tight">
               <div className="text-2xl mt-1 flex items-center">
-                <span className="text-gray-700 mr-3">NAME OF THE PROJECT : GO-GREEN</span>
+                <span className="text-gray-700 mr-3">
+                  NAME OF THE PROJECT : GO-GREEN
+                </span>
               </div>
-              <span className="text-lg text-gray-600">Current task assigned to you</span>
+              <span className="text-lg text-gray-600">
+                Current task assigned to you
+              </span>
             </div>
           </div>
           <div className="flex items-center space-x-2">
@@ -73,19 +78,19 @@ const ProjectFeed = () => {
               type="button"
               className="inline-flex items-center justify-center rounded-full border h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none"
             >
-              <img src='src\assets\team.svg' alt='team svg'/>
+              <img src="src\assets\team.svg" alt="team svg" />
             </button>
             <button
               type="button"
               className="inline-flex items-center justify-center rounded-full border h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none"
             >
-              <img src='src\assets\team2.svg' alt='team svg'/>
+              <img src="src\assets\team2.svg" alt="team svg" />
             </button>
             <button
               type="button"
               className="inline-flex items-center justify-center rounded-full border h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none"
             >
-              <img src='src\assets\team3.svg' alt='team svg'/>
+              <img src="src\assets\team3.svg" alt="team svg" />
             </button>
             <button
               type="button"
