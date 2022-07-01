@@ -31,6 +31,10 @@
   .text-danger {
   color: red;
   }
+
+  .btn btn-success {
+    color: green;
+  }
    
   .buttonin {
     display: flex;
