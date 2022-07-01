@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import Home from './pages/Home'
-import Timeline from "./pages/Timeline";
-import WeekTimeline from "./pages/WeeklyTimeline";
+import Accueil from "./pages/Accueil";
+import Timeline from "./components/page/Timeline";
+import WeekTimeline from "./components/page/WeeklyTimeline"
 import ProjectFeed from "./pages/ProjectFeed";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Accueil/>}/>
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/weekTime" element={<WeekTimeline />} />
         <Route path="/project-feed" element={<ProjectFeed />} />
