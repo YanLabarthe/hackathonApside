@@ -1,5 +1,5 @@
 import React from 'react';
-import './pages/Accueil.css';
+import './Accueil.css';
 import Navbar from '../components/Navbar';
 
 function Accueil() {
