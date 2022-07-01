@@ -27,6 +27,10 @@
     gap: 8px;
     margin: 10px;
   }
+
+  error {
+    color: red;
+  }
     
   .buttonin {
     display: flex;

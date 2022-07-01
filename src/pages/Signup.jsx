@@ -90,15 +90,16 @@ class Signup extends React.Component {
   }
      
   render() {
+
     return (
-      <div className="log">
+      <div style={{ textAlign: 'center' }}
+      className="log">
         
   <form 
   className="log-form"
   onSubmit={this.handleSubmit}>
   
-  <div 
-  class="form-group">
+  <div class="form-group">
       
   <input 
   type="text" 
@@ -109,8 +110,7 @@ class Signup extends React.Component {
   placeholder="Email*" 
   id="email" />
   
-  <div 
-  className="text-danger">
+  <div className="text-danger">
   {this.state.errors.email}</div>
   </div>
   
@@ -124,8 +124,7 @@ class Signup extends React.Component {
   placeholder="Password*" 
   id="password" />
   
-  <div 
-  className="text-danger">
+  <div className="text-danger">
   {this.state.errors.password}</div>
   </div>
   
